@@ -26,6 +26,7 @@ public class GatewaySolicitacaoMuseu {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			e.getCause();
 		}
 	}
 }

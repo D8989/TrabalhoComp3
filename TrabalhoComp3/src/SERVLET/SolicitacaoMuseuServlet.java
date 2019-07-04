@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import MDS.SolicitacaoMDS;
+
 /**
  * Servlet implementation class SolicitacaoMuseuServlet
  */
@@ -28,7 +30,7 @@ public class SolicitacaoMuseuServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getRequestDispatcher("WebContent/CriarSolicitacaoMuseu.jsp").forward(request,response);
+		request.getRequestDispatcher("WebContent/CriarSolicitacaoMuseu.jsp").forward(request,response);
 	}
 
 	/**
@@ -45,6 +47,7 @@ public class SolicitacaoMuseuServlet extends HttpServlet {
 		catch(Exception e){
 			throw new ServletException(e);
 		}
+		response.sendRedirect("WebContent/CriarSolicitacaoMuseu.jsp");
 	}
 
 }

@@ -47,7 +47,7 @@ public class SolicitacaoMDS extends HttpServlet {
     }
     
     public void salvarInformacoes(){
-    	gatewayConexao.salvarNoBancoSolicitacao(String nomeMuseu, String dataCriacao, String cidade, String estado, String nomeGestor, String cpfGestor, String senhaGestor);
+    	gatewayConexao.salvarNoBancoSolicitacao(nomeMuseu, dataCriacao, cidade, estado, nomeGestor, cpfGestor, senhaGestor);
     }
 
 }

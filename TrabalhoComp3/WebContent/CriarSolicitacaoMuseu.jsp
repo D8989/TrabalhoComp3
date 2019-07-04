@@ -5,7 +5,7 @@
     <title>Sistema de Gerenciamento de Museu - Criar Solicitação de Museu</title>
 </head>
 <body>
-<form action="solicitacao-museu" method="post">
+<form action="SolicitacaoMuseuServlet" method="post">
     <label for="nomeMuseu">Nome do Museu:</label><input type="text" id="nomeMuseu" name="nomeMuseu"/><br/>
     <label for="dataCriacao">Data de Criação:</label><input type="date" id="dataCriacao" name="dataCriacao"/><br/>
     <label for="cidade">Cidade:</label><input type="text" id="cidade" name="cidade"/><br/>
