@@ -1,3 +1,5 @@
+package DTO;
+
 public final class UsuarioDTO {
     private int id;
 

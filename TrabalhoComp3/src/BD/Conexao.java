@@ -6,11 +6,11 @@ import java.sql.SQLException;
 
 public class Conexao {
 
-	private String url = "jdbc:derby:/home/daniel/MyDB;create=true";
-	private String user = "joao";
-	private String password = "123456";
+	private static String url = "jdbc:derby:/home/daniel/MyDB;create=true";
+	private static String user = "joao";
+	private static String password = "123456";
 	
-	public Connection getConnection() {
+	public static Connection getConnection() {
 		
 		try {
 			System.out.println("AE CARAI");
